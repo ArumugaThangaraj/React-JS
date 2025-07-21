@@ -10,6 +10,7 @@ const Qrgenerator = () => {
         try {
             const url = `https://api.qrserver.com/v1/create-qr-code/?size=${qrSize}x${qrSize}&data=${encodeURIComponent(qrData)}`;
             setImg(url);
+            
         }catch (error) {
             console.error("Error in QR Code generating",error);
         }
@@ -46,7 +47,7 @@ const Qrgenerator = () => {
                 <label htmlFor="datainput">Data for QR</label>
                 <input type="text" value={qrData} onChange={(e) => {
                     setqrData(e.target.value);
-                }} id="datainput" placeholder="Enter your data or link" required:true />
+                }} id="datainput" placeholder="Enter your data or link"/>
                 <label htmlFor="sizeinput" >Image Size(e.g.150)</label>
                 <input type="number" value={qrSize} onChange={(e) => {
                     setSize(e.target.value);
