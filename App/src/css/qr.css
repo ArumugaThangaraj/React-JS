@@ -12,6 +12,11 @@
     justify-content: center;
     align-items: center;
 }
+h2{
+    font-size: 24px;
+    font-weight: 600;
+    color: #429de8;
+}
 img{
     margin-top: 20px;
 }
@@ -35,6 +40,7 @@ button{
     padding: 10px 8px;
     border-radius: 6px;
     border: none;
+    cursor: pointer;
 }
 .gr-btn{
     background: #429de8;
@@ -42,6 +48,12 @@ button{
     margin-right: 10px;
 }
 .dd-btn{
-    background: green;
+    background: #008000;
     color: white;
+}
+.gr-btn:hover{
+    background: #0077b3;
+}
+.dd-btn:hover{
+    background: #006400;
 }
