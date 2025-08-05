@@ -1,6 +1,8 @@
 // import Usercard from "./components/Usercard"
 // import './App.css';
-import Qr from "./components/Qrgenerator";
+// import Qr from "./components/Qrgenerator";
+import UserForm from "./components/UserForm";
+
 const App = () => {
   return (
     <>
@@ -14,7 +16,8 @@ const App = () => {
         <Usercard name="Martin Roa" role="Back-end developer" city="Los Angels" online={true} profile="./Martin Roa.jpeg" skills={["Python","Flask","Postre SQL","MYSQL","APIs"]}/>
       </div> */}
       <div>
-        <Qr/>
+        {/* <Qr/> */}
+        <UserForm/>
       </div>
     </>
 

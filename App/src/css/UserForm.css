@@ -1,0 +1,18 @@
+*{
+    background: #000;
+    color: white;
+}
+.bg{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+table{
+    width: 300px;
+}
+table,td,tr{
+    border: 2px solid white;
+    border-collapse: collapse;
+    padding: 8px;
+}
