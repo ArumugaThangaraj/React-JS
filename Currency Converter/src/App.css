@@ -1,0 +1,101 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  background: linear-gradient(to right, #162447, #1f4068);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.container {
+  width: 100%;
+  max-width: 400px;
+  background: #ffffff;
+  padding: 30px 25px;
+  color: #333;
+  font-weight: 500;
+  border-radius: 12px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.4);
+}
+
+h3 {
+  color: #0051ff;
+  margin-bottom: 20px;
+  text-align: center;
+  font-size: 24px;
+}
+
+label {
+  display: block;
+  color: #0a75e0;
+  margin-bottom: 6px;
+  font-size: 15px;
+}
+
+input,
+select {
+  font-size: 15px;
+  margin-bottom: 16px;
+  width: 100%;
+  padding: 10px 12px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  transition: border 0.3s ease;
+}
+
+input:focus,
+select:focus {
+  border: 2px solid #09d7ee;
+  outline: none;
+}
+
+option {
+  background: #2d86c1;
+  color: #fff;
+}
+
+.converter {
+  margin-top: 10px;
+}
+
+.result {
+  margin-top: 20px;
+  padding: 12px;
+  font-size: 18px;
+  font-weight: 500;
+  border: 2px solid #09d7ee;
+  border-radius: 10px;
+  background-color: #f0f8ff;
+  color: #222;
+  text-align: center;
+}
+
+/* Responsive tweak */
+@media (max-width: 480px) {
+  .container {
+    padding: 20px;
+    border-radius: 8px;
+  }
+
+  h3 {
+    font-size: 20px;
+  }
+
+  input,
+  select {
+    font-size: 14px;
+    padding: 8px 10px;
+  }
+
+  .result {
+    font-size: 16px;
+  }
+}
+
