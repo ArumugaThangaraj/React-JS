@@ -1,10 +1,11 @@
-import "./App.css";
-import SeatingChartManager from "./components/SeatingChar.jsx";
+import Seat from "./components/SeatingChar"
+import './App.css'
+
 const App = () => {
   return (
-    <>
-    <SeatingChartManager />
-    </>
+    <div>
+      <Seat />
+    </div>
   )
 }
 export default App;

@@ -1,0 +1,175 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: linear-gradient(135deg, #1e293b, #0f172a); 
+  font-family: 'Segoe UI', Roboto, sans-serif;
+  color: #f8fafc;
+  line-height: 1.6;
+}
+
+
+h1 {
+  color: #38bdf8;
+  text-align: center;
+  margin: 30px 0 20px;
+  font-size: 2.5rem;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+
+.card {
+  background: #ffffff;
+  color: #1e293b;
+  padding: 35px;
+  margin: 30px auto;
+  border-radius: 15px;
+  max-width: 650px;
+  width: 90%; 
+  box-shadow: 0px 8px 25px rgba(0, 0, 0, 0.2);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0px 12px 30px rgba(0, 0, 0, 0.25);
+}
+
+
+.card h2 {
+  margin: 15px 0;
+  font-size: 1.3rem;
+  color: #0f172a;
+}
+
+
+.card label {
+  display: block;
+  font-size: 1rem;
+  margin-top: 15px;
+  padding: 12px 15px;
+  border: 2px solid #e2e8f0;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.25s ease;
+  background: #f8fafc;
+}
+
+.card label:hover {
+  background: #e0f2fe;
+  border-color: #38bdf8;
+}
+
+
+.card input[type="radio"] {
+  margin-right: 12px;
+  accent-color: #0ea5e9;
+  transform: scale(1.2);
+  vertical-align: middle;
+}
+
+
+.btn {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 30px;
+  flex-wrap: wrap; /* stack on small screens */
+  gap: 10px;
+}
+
+.btn button {
+  background: #38bdf8;
+  color: #fff;
+  border: none;
+  padding: 12px 25px;
+  font-size: 1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.btn button:disabled {
+  background: #94a3b8;
+  cursor: not-allowed;
+}
+
+.btn button:hover:not(:disabled) {
+  background: #0284c7;
+  transform: translateY(-2px);
+}
+
+
+.card p {
+  font-size: 1.2rem;
+  margin-top: 20px;
+  text-align: center;
+  font-weight: 500;
+}
+
+.card h2 {
+  text-align: center;
+}
+
+
+
+@media (max-width: 768px) {
+  h1 {
+    font-size: 2rem;
+  }
+
+  .card {
+    padding: 25px;
+  }
+
+  .card h2 {
+    font-size: 1.1rem;
+  }
+
+  .card label {
+    font-size: 0.95rem;
+    padding: 10px;
+  }
+
+  .btn button {
+    font-size: 0.95rem;
+    padding: 10px 18px;
+  }
+}
+
+
+@media (max-width: 480px) {
+  h1 {
+    font-size: 1.6rem;
+  }
+
+  .card {
+    padding: 20px;
+    margin: 20px auto;
+  }
+
+  .card h2 {
+    font-size: 1rem;
+  }
+
+  .card label {
+    font-size: 0.9rem;
+    margin-top: 10px;
+  }
+
+  .btn {
+    flex-direction: column; 
+    gap: 12px;
+  }
+
+  .btn button {
+    width: 100%; 
+    padding: 12px;
+  }
+}
